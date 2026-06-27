@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <title>HEAVEN'S＋LOCOS | 福島県郡山市 セレクトショップ＆カジュアルバー</title>
+  <meta name="description" content="服ではなく、カルチャーを売る店。福島県郡山市大町のセレクトショップ＆カジュアルバー。RADIALL・Soft Machine・Loser Machine・Hard Luck・HARDEE取扱。営業時間12:00〜20:00。">
+  <link rel="canonical" href="https://heavens-locos.com/">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="logos/IMG_3423.JPG">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="HEAVEN'S＋LOCOS">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://heavens-locos.com/">
+  <meta property="og:title" content="HEAVEN'S＋LOCOS | 福島県郡山市">
+  <meta property="og:description" content="服ではなく、カルチャーを売る店。郡山市大町のセレクトショップ＆カジュアルバー。">
+  <meta property="og:image" content="logos/IMG_3423.JPG">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="logos/IMG_3423.JPG">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "HEAVEN'S＋LOCOS",
+    "image": "logos/IMG_3423.JPG",
+    "description": "服ではなく、カルチャーを売る店。福島県郡山市のセレクトショップ＆カジュアルバー。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "大町1-2-15 カガミビル",
+      "addressLocality": "郡山市",
+      "addressRegion": "福島県",
+      "postalCode": "963-8002",
+      "addressCountry": "JP"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "12:00",
+      "closes": "20:00"
+    },
+    "sameAs": ["https://www.instagram.com/heavenslocos_1f"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=UnifrakturMaguntia&family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'PirataOne';
+      src: url('PirataOne.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* ─────────────────────────────
+       TOKENS
+    ───────────────────────────── */
+    :root {
+      --bg:          #0A0A0A;
+      --surface:     #111111;
+      --surface-2:   #191919;
+      --cream:       #F0EBE0;
+      --cream-60:    rgba(240,235,224,.6);
+      --cream-20:    rgba(240,235,224,.08);
+      --red:         #8B1A1A;
+      --red-hi:      #C0392B;
+      --border:      rgba(240,235,224,.09);
+      --font-display:'Bebas Neue', sans-serif;
+      --font-serif:  'Cormorant Garamond', Georgia, serif;
+      --font-body:   'Inter', system-ui, sans-serif;
+      --ease:        cubic-bezier(.25,.46,.45,.94);
+    }
+
+    /* ─────────────────────────────
+       RESET
+    ───────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: var(--font-body);
+      font-weight: 300;
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; background: none; border: none; }
+
+    /* ─────────────────────────────
+       UTILITIES
+    ───────────────────────────── */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: clamp(20px, 5vw, 60px);
+    }
+
+    .label {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .35em;
+      text-transform: uppercase;
+      color: var(--red-hi);
+    }
+
+    .divider {
+      width: 32px;
+      height: 1px;
+      background: var(--red);
+      margin: 20px 0;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .9s var(--ease), transform .9s var(--ease);
+    }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .12s; }
+    .reveal-delay-2 { transition-delay: .24s; }
+    .reveal-delay-3 { transition-delay: .36s; }
+
+    /* Parallax wrapper */
+    .parallax-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+    .parallax-img {
+      width: 100%;
+      height: 110%;
+      object-fit: cover;
+      object-position: center;
+      will-change: transform;
+    }
+
+    /* ─────────────────────────────
+       NAV
+    ───────────────────────────── */
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px clamp(20px, 5vw, 60px);
+      background: transparent;
+      transition: background .5s var(--ease), backdrop-filter .5s var(--ease);
+      pointer-events: none;
+      opacity: 0;
+    }
+    .nav.scrolled {
+      background: rgba(10,10,10,.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      pointer-events: all;
+      opacity: 1;
+    }
+    .nav-logo img {
+      height: 28px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: .85;
+    }
+    .nav-ig {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .7rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--cream-60);
+      transition: color .3s;
+    }
+    .nav-ig:hover { color: var(--cream); }
+    .nav-ig svg { width: 16px; height: 16px; }
+
+    /* ─────────────────────────────
+       HERO
+    ───────────────────────────── */
+    #hero {
+      position: relative;
+      height: 100dvh;
+      min-height: 580px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: -10% 0;
+      will-change: transform;
+    }
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+      filter: brightness(.42);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(10,10,10,.35) 0%, transparent 25%),
+        linear-gradient(to top,    rgba(10,10,10,.85) 0%, transparent 40%);
+    }
+
+    .hero-content {
+      position: relative;
+      text-align: center;
+      padding-inline: 20px;
+    }
+    .hero-logo {
+      width: clamp(260px, 55vw, 420px);
+      margin-inline: auto;
+    }
+    .hero-origin {
+      font-size: clamp(.58rem, 1.2vw, .68rem);
+      letter-spacing: .4em;
+      text-transform: uppercase;
+      color: var(--red-hi);
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .hero-year {
+      font-family: 'PirataOne', cursive !important;
+      font-size: clamp(7rem, 22vw, 18rem);
+      line-height: .85;
+      letter-spacing: .02em;
+      color: var(--cream);
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .hero-logo-img {
+      width: clamp(240px, 55vw, 600px);
+      display: block;
+      margin-bottom: 64px;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      font-weight: 300;
+      letter-spacing: .04em;
+      color: var(--cream-60);
+      margin-bottom: 100px;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      font-size: .58rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--cream-60);
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 44px;
+      background: linear-gradient(to bottom, var(--cream-60), transparent);
+      animation: scrollDrop 2s var(--ease) infinite;
+    }
+    @keyframes scrollDrop {
+      0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
+      50%  { transform: scaleY(1); transform-origin: top; opacity: 1; }
+      51%  { transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
+    }
+
+    /* ─────────────────────────────
+       MANIFESTO
+    ───────────────────────────── */
+    #manifesto {
+      padding: clamp(80px, 12vw, 160px) 0;
+      text-align: center;
+    }
+    .manifesto-en {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 9vw, 8rem);
+      line-height: .95;
+      letter-spacing: .02em;
+      color: rgba(240,235,224,.04);
+      user-select: none;
+      margin-bottom: -1.5rem;
+    }
+    .manifesto-quote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1.8rem, 4.5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.3;
+      color: var(--cream);
+      position: relative;
+    }
+    .manifesto-body {
+      max-width: 520px;
+      margin: 40px auto 0;
+      font-size: .875rem;
+      color: var(--cream-60);
+      line-height: 2;
+    }
+
+    /* ─────────────────────────────
+       SHOP — 1F
+    ───────────────────────────── */
+    #shop {
+      background: var(--surface);
+      padding: clamp(80px, 10vw, 140px) 0;
+    }
+    .section-floor {
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 15vw, 12rem);
+      line-height: 1;
+      color: rgba(240,235,224,.035);
+      margin-bottom: -1.5rem;
+      user-select: none;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      letter-spacing: .05em;
+      line-height: 1.1;
+      margin-top: 12px;
+    }
+    .section-desc {
+      margin-top: 16px;
+      font-size: .85rem;
+      color: var(--cream-60);
+      max-width: 380px;
+      line-height: 1.9;
+    }
+
+    /* Shop feature grid */
+    .shop-feature-grid {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 4px;
+      height: clamp(220px, 36vw, 420px);
+    }
+    .shop-feat-main,
+    .shop-feat-sub {
+      overflow: hidden;
+      height: 100%;
+    }
+    .shop-feat-main img,
+    .shop-feat-sub img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    @media (max-width: 600px) {
+      .shop-feature-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+      .shop-feat-main { height: clamp(180px, 55vw, 260px); }
+      .shop-feat-sub  { height: clamp(180px, 55vw, 260px); }
+    }
+
+    /* Brand grid */
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(160px, 100%), 1fr));
+      gap: 2px;
+      margin-top: 2px;
+    }
+    .brand-cell {
+      background: var(--surface-2);
+      aspect-ratio: 3/2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 20px;
+      transition: background .35s var(--ease);
+    }
+    .brand-cell:hover { background: #222; }
+    .brand-cell img {
+      max-width: 110px;
+      max-height: 52px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: .6;
+      transition: opacity .35s var(--ease);
+    }
+    .brand-cell:hover img { opacity: 1; }
+    /* Radiall keeps brand color */
+    .brand-cell.keep-color img {
+      filter: none;
+      opacity: .7;
+    }
+    .brand-cell.keep-color:hover img { opacity: 1; }
+    /* Text-only brand (Loser Machine) */
+    .brand-cell-text {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      letter-spacing: .12em;
+      color: var(--cream-60);
+      transition: color .35s;
+      text-align: center;
+    }
+    .brand-cell:hover .brand-cell-text { color: var(--cream); }
+
+    /* Product grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+      gap: 2px;
+      margin-top: 2px;
+    }
+    .product-card {
+      background: var(--surface-2);
+      display: flex;
+      flex-direction: column;
+      transition: background .3s var(--ease);
+    }
+    .product-card:hover { background: #212121; }
+    .product-thumb {
+      aspect-ratio: 1;
+      background: #141414;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .product-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s var(--ease);
+    }
+    .product-card:hover .product-thumb img { transform: scale(1.04); }
+    .product-thumb-placeholder {
+      font-family: var(--font-display);
+      font-size: .85rem;
+      letter-spacing: .2em;
+      color: rgba(240,235,224,.12);
+      text-align: center;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .product-info {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .product-brand {
+      font-size: .58rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--red-hi);
+    }
+    .product-name {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: .05em;
+      color: var(--cream);
+      line-height: 1.2;
+    }
+    .product-variant {
+      font-size: .7rem;
+      color: var(--cream-60);
+    }
+    .product-price {
+      font-size: .85rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-top: auto;
+      padding-top: 14px;
+    }
+    .product-link {
+      display: block;
+      margin-top: 14px;
+      padding: 10px;
+      border: 1px solid var(--border);
+      font-size: .62rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--cream-60);
+      transition: border-color .3s, color .3s, background .3s;
+    }
+    .product-link:hover {
+      border-color: rgba(240,235,224,.4);
+      color: var(--cream);
+      background: rgba(240,235,224,.04);
+    }
+
+    .shop-store-link {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .shop-store-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 36px;
+      border: 1px solid rgba(240,235,224,.25);
+      font-size: .68rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--cream);
+      transition: background .3s, border-color .3s;
+    }
+    .shop-store-link a:hover {
+      background: var(--cream);
+      color: var(--bg);
+      border-color: var(--cream);
+    }
+
+    /* ─────────────────────────────
+       INSTAGRAM GALLERY
+    ───────────────────────────── */
+    #ig-gallery {
+      background: var(--bg);
+      padding: clamp(60px, 8vw, 100px) 0;
+      overflow: hidden;
+    }
+
+    .ig-gallery-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-inline: clamp(20px, 5vw, 60px);
+    }
+
+    .ig-gallery-header .label { margin-bottom: 12px; display: block; }
+
+    .ig-gallery-header h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      letter-spacing: .05em;
+    }
+
+    .ig-track-wrap {
+      overflow: hidden;
+      width: 100%;
+      cursor: grab;
+      user-select: none;
+    }
+    .ig-track-wrap:active { cursor: grabbing; }
+
+    .ig-track {
+      display: flex;
+      gap: 6px;
+      width: max-content;
+      animation: igScroll 32s linear infinite;
+    }
+    .ig-track-wrap:hover .ig-track { animation-play-state: paused; }
+
+    @keyframes igScroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ig-item {
+      flex-shrink: 0;
+      width: clamp(200px, 22vw, 300px);
+      aspect-ratio: 1;
+      overflow: hidden;
+      position: relative;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+    }
+
+    .ig-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s var(--ease), filter .6s var(--ease);
+      filter: brightness(.85);
+    }
+
+    .ig-item:hover img {
+      transform: scale(1.07);
+      filter: brightness(1);
+    }
+
+    .ig-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(10,10,10,0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .4s var(--ease);
+    }
+    .ig-item:hover .ig-item-overlay { background: rgba(10,10,10,.35); }
+
+    .ig-item-overlay svg {
+      width: 28px;
+      height: 28px;
+      color: var(--cream);
+      opacity: 0;
+      transform: scale(.8);
+      transition: opacity .4s var(--ease), transform .4s var(--ease);
+    }
+    .ig-item:hover .ig-item-overlay svg {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* ─────────────────────────────
+       IG FEED GALLERY
+    ───────────────────────────── */
+    .ig-feed {
+      margin-top: 56px;
+    }
+
+    .ig-feed-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .ig-feed-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .ig-feed-title svg {
+      width: 16px;
+      height: 16px;
+      opacity: .5;
+    }
+
+    .ig-feed-handle {
+      font-size: .65rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--cream-60);
+    }
+
+    .ig-feed-link {
+      font-size: .6rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--cream-60);
+      border-bottom: 1px solid rgba(240,235,224,.2);
+      padding-bottom: 2px;
+      transition: color .3s, border-color .3s;
+    }
+    .ig-feed-link:hover { color: var(--cream); border-color: var(--cream-60); }
+
+    .ig-scroll-wrap {
+      overflow-x: auto;
+      overflow-y: hidden;
+      cursor: grab;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .ig-scroll-wrap::-webkit-scrollbar { display: none; }
+    .ig-scroll-wrap.is-dragging { cursor: grabbing; scroll-snap-type: none; }
+
+    .ig-scroll-track {
+      display: flex;
+      gap: 4px;
+      width: max-content;
+      padding-bottom: 2px;
+    }
+
+    .ig-post {
+      flex-shrink: 0;
+      width: clamp(180px, 28vw, 260px);
+      aspect-ratio: 1;
+      overflow: hidden;
+      position: relative;
+      background: var(--surface-2);
+      scroll-snap-align: start;
+      border: 1px solid var(--border);
+    }
+
+    .ig-post img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s var(--ease), filter .5s var(--ease);
+      filter: brightness(.8);
+    }
+
+    .ig-post:hover img {
+      transform: scale(1.06);
+      filter: brightness(1);
+    }
+
+    .ig-post-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity .4s var(--ease);
+      background: rgba(10,10,10,.3);
+    }
+    .ig-post:hover .ig-post-overlay { opacity: 1; }
+
+    .ig-post-overlay svg {
+      width: 26px;
+      height: 26px;
+      color: var(--cream);
+    }
+
+    /* ─────────────────────────────
+       BAR — 2F
+    ───────────────────────────── */
+    #bar {
+      padding: clamp(80px, 10vw, 140px) 0;
+    }
+    .bar-photos {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+    }
+    .bar-main {
+      grid-column: 1 / -1;
+      height: clamp(260px, 42vw, 520px);
+      overflow: hidden;
+      position: relative;
+    }
+    .bar-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .bar-sub {
+      height: clamp(160px, 22vw, 280px);
+      overflow: hidden;
+      position: relative;
+    }
+    .bar-sub img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .bar-photos .parallax-img { transition: transform 6s var(--ease); }
+
+    .bar-quote {
+      margin-top: 48px;
+      text-align: center;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: var(--cream-60);
+    }
+
+    /* ─────────────────────────────
+       CULTURE
+    ───────────────────────────── */
+    #culture {
+      background: var(--surface);
+      padding: clamp(80px, 10vw, 140px) 0;
+    }
+    .culture-header { text-align: center; }
+    .culture-header .divider { margin-inline: auto; }
+
+    .culture-mosaic {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto auto;
+      gap: 4px;
+    }
+    .cm-1 { grid-column: 1 / 7;  height: clamp(200px,28vw,360px); }
+    .cm-2 { grid-column: 7 / 13; height: clamp(200px,28vw,360px); }
+    .cm-3 { grid-column: 1 / 5;  height: clamp(160px,20vw,280px); }
+    .cm-4 { grid-column: 5 / 9;  height: clamp(160px,20vw,280px); }
+    .cm-5 { grid-column: 9 / 13; height: clamp(160px,20vw,280px); }
+    .culture-mosaic .parallax-wrap { overflow: hidden; }
+    .culture-mosaic .parallax-img {
+      filter: brightness(.78);
+      transition: filter .6s var(--ease);
+    }
+    .culture-mosaic .parallax-wrap:hover .parallax-img { filter: brightness(1); }
+
+    /* Instagram CTA */
+    .ig-cta {
+      margin-top: 80px;
+      text-align: center;
+    }
+    .ig-cta-label {
+      font-size: .8rem;
+      color: var(--cream-60);
+      margin-bottom: 28px;
+    }
+    .ig-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 40px;
+      border: 1px solid rgba(240,235,224,.3);
+      font-size: .7rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--cream);
+      transition: background .35s var(--ease), border-color .35s, color .35s;
+    }
+    .ig-btn:hover {
+      background: var(--cream);
+      border-color: var(--cream);
+      color: var(--bg);
+    }
+    .ig-btn svg { width: 17px; height: 17px; flex-shrink: 0; }
+
+    /* ─────────────────────────────
+       VISIT
+    ───────────────────────────── */
+    #visit {
+      padding: clamp(80px, 10vw, 140px) 0;
+    }
+    .visit-header { text-align: center; }
+    .visit-header .divider { margin-inline: auto; }
+
+    .visit-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 8vw, 100px);
+      align-items: start;
+      margin-top: clamp(48px, 6vw, 80px);
+    }
+
+    .visit-dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      row-gap: 0;
+      column-gap: 32px;
+    }
+    .visit-dl dt,
+    .visit-dl dd {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .visit-dl dt {
+      font-size: .62rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--red-hi);
+      padding-top: 22px;
+      white-space: nowrap;
+    }
+    .visit-dl dd {
+      font-size: .9rem;
+      line-height: 1.7;
+    }
+
+    .map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 36px;
+      padding: 14px 28px;
+      background: var(--red);
+      font-size: .68rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--cream);
+      transition: background .3s var(--ease);
+    }
+    .map-btn:hover { background: var(--red-hi); }
+    .map-btn svg { width: 14px; height: 14px; }
+
+    .visit-map {
+      aspect-ratio: 1;
+      background: var(--surface-2);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .visit-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      filter: grayscale(1) invert(1) contrast(.85) brightness(.9);
+    }
+
+    /* ─────────────────────────────
+       FOOTER
+    ───────────────────────────── */
+    footer {
+      padding: 56px 0 40px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    .footer-logo {
+      height: 40px;
+      width: auto;
+      margin-inline: auto;
+      filter: brightness(0) invert(1);
+      opacity: .35;
+      margin-bottom: 24px;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 20px;
+    }
+    .footer-links a {
+      font-size: .65rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--cream-60);
+      transition: color .3s;
+    }
+    .footer-links a:hover { color: var(--cream); }
+    footer small {
+      display: block;
+      font-size: .6rem;
+      letter-spacing: .15em;
+      color: rgba(240,235,224,.25);
+    }
+
+    /* ─────────────────────────────
+       RESPONSIVE
+    ───────────────────────────── */
+    @media (max-width: 768px) {
+      .bar-photos {
+        grid-template-columns: 1fr;
+      }
+      .bar-main  { grid-column: auto; }
+      .bar-sub   { height: clamp(160px, 45vw, 220px); }
+
+      .culture-mosaic {
+        grid-template-columns: 1fr 1fr;
+      }
+      .cm-1 { grid-column: 1 / -1; height: clamp(180px, 55vw, 280px); }
+      .cm-2 { grid-column: 1 / -1; height: clamp(180px, 55vw, 280px); }
+      .cm-3, .cm-4 { grid-column: span 1; height: clamp(140px, 42vw, 220px); }
+      .cm-5 { grid-column: 1 / -1; height: clamp(140px, 42vw, 220px); }
+
+      .visit-layout {
+        grid-template-columns: 1fr;
+      }
+      .visit-map { aspect-ratio: 4/3; }
+    }
+
+    @media (max-width: 480px) {
+      .brand-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ─────────────────────────────
+       STORY (scrollable movie)
+    ───────────────────────────── */
+    #story { background: var(--bg); }
+
+    .story-scene {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .story-scene-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: .1;
+    }
+
+    .story-scene-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 40px 20px;
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 1s var(--ease), transform 1s var(--ease);
+    }
+    .story-scene.in-view .story-scene-inner { opacity: 1; transform: none; }
+
+    .story-main-text {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(2.4rem, 7vw, 6rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--cream);
+    }
+
+    .story-sub-text {
+      display: block;
+      margin-top: 16px;
+      font-size: .62rem;
+      letter-spacing: .4em;
+      text-transform: uppercase;
+      color: var(--red-hi);
+    }
+
+    .story-finale {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: var(--surface);
+      position: relative;
+    }
+
+    .story-finale-origin {
+      font-size: .62rem;
+      letter-spacing: .4em;
+      text-transform: uppercase;
+      color: var(--cream-60);
+      margin-bottom: 48px;
+      opacity: 0;
+      transition: opacity 1s var(--ease) .1s;
+    }
+    .story-finale.in-view .story-finale-origin { opacity: 1; }
+
+    .story-finale-logo {
+      width: clamp(200px, 45vw, 360px);
+      margin-inline: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s var(--ease) .25s, transform 1s var(--ease) .25s;
+    }
+    .story-finale.in-view .story-finale-logo { opacity: .9; transform: none; }
+
+    .story-finale-tagline {
+      margin-top: 40px;
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3.5vw, 2.8rem);
+      letter-spacing: .12em;
+      color: var(--red-hi);
+      opacity: 0;
+      transition: opacity 1s var(--ease) .45s;
+    }
+    .story-finale.in-view .story-finale-tagline { opacity: 1; }
+
+    /* ─────────────────────────────
+       REDUCED MOTION
+    ───────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; }
+      .hero-scroll-line { animation: none; }
+      .parallax-img { height: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="mainNav" aria-label="メインナビゲーション">
+    <a href="#hero" class="nav-logo" aria-label="HEAVEN'S＋LOCOS トップへ">
+      <img src="logos/heavens_locos.png" alt="HEAVEN'S＋LOCOS" width="140" height="28">
+    </a>
+    <a href="https://www.instagram.com/heavenslocos_1f" target="_blank" rel="noopener noreferrer" class="nav-ig" aria-label="Instagram @heavenslocos_1f を開く">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+      @heavenslocos_1f
+    </a>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section id="hero" aria-label="ヒーロー">
+      <div class="hero-bg" id="heroBg">
+        <img src="logos/IMG_3423.JPG"
+             alt="HEAVEN'S＋LOCOS 外観 — ネオンサイン、チョッパーバイク、ローライダー自転車"
+             width="900" height="1200"
+             loading="eager" decoding="async"
+             fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="hero-origin">From Koriyama, Fukushima — Est. 2012</span>
+        <img src="logos/heavens_locos.png" alt="HEAVEN'S+LOCOS" class="hero-logo-img">
+        <p class="hero-tagline">
+          進化したものも<br>
+          変わらないものも<br><br>
+          ここには、<br>
+          ずっと好きなものがある。
+        </p>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── STORY ── -->
+    <section id="story" aria-label="HEAVEN'Sの物語">
+
+      <div class="story-scene">
+        <div class="story-scene-bg" style="background-image:url('logos/IMG_3416.JPG');"></div>
+        <div class="story-scene-inner">
+          <p class="story-main-text">服があった。</p>
+          <span class="story-sub-text">Clothes</span>
+        </div>
+      </div>
+
+      <div class="story-scene">
+        <div class="story-scene-bg" style="background-image:url('logos/IMG_3183.jpg');"></div>
+        <div class="story-scene-inner">
+          <p class="story-main-text">バーがあった。</p>
+          <span class="story-sub-text">LOCOS Bar — 2F</span>
+        </div>
+      </div>
+
+      <div class="story-scene">
+        <div class="story-scene-inner">
+          <p class="story-main-text">音楽があった。</p>
+          <span class="story-sub-text">Music</span>
+        </div>
+      </div>
+
+      <div class="story-scene">
+        <div class="story-scene-bg" style="background-image:url('logos/IMG_3415.JPG');"></div>
+        <div class="story-scene-inner">
+          <p class="story-main-text">仲間ができた。</p>
+          <span class="story-sub-text">Community</span>
+        </div>
+      </div>
+
+      <div class="story-scene">
+        <div class="story-scene-inner">
+          <p class="story-main-text">ブランドが生まれた。</p>
+          <span class="story-sub-text">HARDEE / GOODTIMES / LOCOS</span>
+        </div>
+      </div>
+
+      <div class="story-finale">
+        <p class="story-finale-origin">From Koriyama, Fukushima — Est. 2012</p>
+        <img src="logos/heavens_locos.png" alt="HEAVEN'S＋LOCOS" class="story-finale-logo" loading="lazy">
+        <p class="story-finale-tagline">GOOD TIMES START HERE.</p>
+      </div>
+
+    </section>
+
+    <!-- ── MANIFESTO ── -->
+    <section id="manifesto" aria-label="ブランド宣言">
+      <div class="container">
+        <p class="manifesto-en" aria-hidden="true">CULTURE</p>
+        <div class="reveal">
+          <span class="label">About</span>
+          <div class="divider"></div>
+          <h1 class="manifesto-quote">
+            温度あるもの。ここに。
+          </h1>
+        </div>
+        <p class="manifesto-body reveal reveal-delay-1">
+          着ること。<br>
+          聴くこと。<br>
+          走ること。
+        </p>
+      </div>
+    </section>
+
+    <!-- ── SHOP 1F ── -->
+    <section id="shop" aria-label="1F セレクトショップ">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-floor" aria-hidden="true">1F</p>
+          <span class="label">Clothing Shop</span>
+          <h2 class="section-title">HEAVEN'S</h2>
+          <p class="section-desc">ライフスタイルが、交わる場所。</p>
+        </div>
+
+        <!-- Shop feature images -->
+        <div class="shop-feature-grid reveal reveal-delay-1" style="cursor:pointer;" onclick="location.href='staff.html'"
+             title="スタッフ紹介を見る">
+          <div class="parallax-wrap shop-feat-main">
+            <img src="logos/IMG_3426.JPG"
+                 alt="1F 店内 — Suavecito ネオン、ヘルメット、スケートボード"
+                 class="parallax-img"
+                 width="900" height="1200"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="parallax-wrap shop-feat-sub">
+            <img src="logos/スクリーンショット 2026-06-25 18.36.02.png"
+                 alt="1F — チョッパーとライダー"
+                 class="parallax-img"
+                 loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <!-- Product cards -->
+        <div class="product-grid">
+
+          <div class="product-card reveal">
+            <div class="product-thumb">
+              <div class="product-thumb-placeholder">PHOTO<br>COMING</div>
+            </div>
+            <div class="product-info">
+              <span class="product-brand">Loser Machine</span>
+              <p class="product-name">BLACKTOP STOCK<br>POCKET T-SHIRT</p>
+              <p class="product-variant">BLACK</p>
+              <p class="product-price">¥--,---</p>
+              <a href="https://heavenslocos.stores.jp" target="_blank" rel="noopener noreferrer" class="product-link">Store で見る →</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal reveal-delay-1">
+            <div class="product-thumb">
+              <img src="logos/lm_mystic_woman.jpg" alt="Loser Machine Mystic Woman Stock T-Shirt" loading="lazy" decoding="async">
+            </div>
+            <div class="product-info">
+              <span class="product-brand">Loser Machine</span>
+              <p class="product-name">MYSTIC WOMAN<br>STOCK T-SHIRT</p>
+              <p class="product-variant">BLACK</p>
+              <p class="product-price">¥--,---</p>
+              <a href="https://heavenslocos.stores.jp" target="_blank" rel="noopener noreferrer" class="product-link">Store で見る →</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal reveal-delay-2">
+            <div class="product-thumb">
+              <img src="logos/sm_gene_shirts.jpg" alt="The Soft Machine Gene Shirts" loading="lazy" decoding="async">
+            </div>
+            <div class="product-info">
+              <span class="product-brand">The Soft Machine</span>
+              <p class="product-name">GENE<br>SHIRTS</p>
+              <p class="product-variant">BLACK</p>
+              <p class="product-price">¥--,---</p>
+              <a href="https://heavenslocos.stores.jp" target="_blank" rel="noopener noreferrer" class="product-link">Store で見る →</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal reveal-delay-1">
+            <div class="product-thumb">
+              <img src="logos/sm_bmg.jpg" alt="The Soft Machine BMG Shirt" loading="lazy" decoding="async">
+            </div>
+            <div class="product-info">
+              <span class="product-brand">The Soft Machine</span>
+              <p class="product-name">BMG<br>SHIRT</p>
+              <p class="product-variant">BLACK</p>
+              <p class="product-price">¥--,---</p>
+              <a href="https://heavenslocos.stores.jp" target="_blank" rel="noopener noreferrer" class="product-link">Store で見る →</a>
+            </div>
+          </div>
+
+          <div class="product-card reveal reveal-delay-2">
+            <div class="product-thumb">
+              <div class="product-thumb-placeholder">PHOTO<br>COMING</div>
+            </div>
+            <div class="product-info">
+              <span class="product-brand">HARDEE</span>
+              <p class="product-name">ORIGINAL<br>T-SHIRT</p>
+              <p class="product-variant">BLACK</p>
+              <p class="product-price">¥--,---</p>
+              <a href="https://heavenslocos.stores.jp" target="_blank" rel="noopener noreferrer" class="product-link">Store で見る →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Store link -->
+        <div class="shop-store-link reveal">
+          <a href="https://heavenslocos.stores.jp" target="_blank" rel="noopener noreferrer">
+            全商品を見る — HEAVEN'S ONLINE STORE
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BAR 2F ── -->
+    <section id="bar" aria-label="2F カジュアルバー">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-floor" aria-hidden="true">2F</p>
+          <span class="label">Casual Bar</span>
+          <h2 class="section-title">Locos Bar</h2>
+          <p class="section-desc">BEER. TACOS. BAD JOKES.</p>
+        </div>
+
+        <div class="bar-photos" style="cursor:pointer;" onclick="location.href='staff-locos.html'" title="スタッフ紹介を見る">
+          <div class="bar-main parallax-wrap reveal">
+            <img src="logos/IMG_3183.jpg"
+                 alt="LOCOS BAR — バーカウンター全景"
+                 class="parallax-img"
+                 width="1200" height="900"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="bar-sub parallax-wrap reveal">
+            <img src="logos/IMG_3420.JPG"
+                 alt="バー棚 — Jose Cuervo、Jack Daniel's"
+                 class="parallax-img"
+                 width="900" height="1200"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="bar-sub parallax-wrap reveal reveal-delay-1">
+            <img src="logos/IMG_3421.JPG"
+                 alt="ドリンク — Corona、Heineken、Tecate"
+                 class="parallax-img"
+                 width="900" height="1200"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="bar-sub parallax-wrap reveal reveal-delay-1">
+            <img src="logos/スクリーンショット 2026-06-25 17.10.49.png"
+                 alt="LOCOS BAR — タコス"
+                 class="parallax-img"
+                 loading="lazy" decoding="async">
+          </div>
+          <div class="bar-sub parallax-wrap reveal reveal-delay-2">
+            <img src="logos/スクリーンショット 2026-06-25 17.26.09.png"
+                 alt="LOCOS BAR — ローデッドフライ"
+                 class="parallax-img"
+                 loading="lazy" decoding="async">
+          </div>
+        </div>
+
+        <div class="reveal" style="display:flex; justify-content:center; margin-top:48px;">
+          <a href="https://www.instagram.com/heavenslocos_2f/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="ig-btn"
+             aria-label="Instagram @heavenslocos_2f を開く">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+            INSTAGRAMで見る
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── OUR CULTURE ── -->
+    <section id="our-culture" aria-label="OUR CULTURE" style="padding:clamp(80px,10vw,140px) 0;">
+      <div class="container">
+        <div class="reveal" style="text-align:center;">
+          <span class="label">Our Culture</span>
+          <div class="divider" style="margin-inline:auto;"></div>
+          <h2 class="section-title">HEAVEN'Sは服屋では終わらない。</h2>
+          <p class="manifesto-body" style="margin-top:32px;">
+            すべてはここから始まる。
+          </p>
+        </div>
+        <div class="reveal reveal-delay-1" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr));gap:2px;margin-top:56px;">
+          <a href="https://www.instagram.com/hardee_clothing/" style="background:var(--surface-2);padding:40px 28px;display:flex;flex-direction:column;gap:12px;text-decoration:none;cursor:pointer;">
+            <span class="label">Brand</span>
+            <p style="font-family:var(--font-display);font-size:1.6rem;letter-spacing:.08em;color:var(--cream);">HARDEE</p>
+            <p style="font-size:.8rem;color:var(--cream-60);line-height:1.8;">HEAVEN'Sから生まれた<br>オリジナルアパレルブランド。</p>
+          </a>
+          <a href="https://www.instagram.com/goodtimes024/" style="background:var(--surface-2);padding:40px 28px;display:flex;flex-direction:column;gap:12px;text-decoration:none;cursor:pointer;">
+            <span class="label">Workshop</span>
+            <p style="font-family:var(--font-display);font-size:1.6rem;letter-spacing:.08em;color:var(--cream);">GOODTIMES</p>
+            <p style="font-size:.8rem;color:var(--cream-60);line-height:1.8;">刺繍・カスタムの工場。<br>モノ作りの拠点。</p>
+          </a>
+          <a href="https://www.instagram.com/heavenslocos_2f/" style="background:var(--surface-2);padding:40px 28px;display:flex;flex-direction:column;gap:12px;text-decoration:none;cursor:pointer;">
+            <span class="label">Bar</span>
+            <p style="font-family:var(--font-display);font-size:1.6rem;letter-spacing:.08em;color:var(--cream);">LOCOS</p>
+            <p style="font-size:.8rem;color:var(--cream-60);line-height:1.8;">人が集まり、<br>カルチャーが混ざる夜。</p>
+          </a>
+          <a href="https://www.instagram.com/locostruck81/" style="background:var(--surface-2);padding:40px 28px;display:flex;flex-direction:column;gap:12px;text-decoration:none;cursor:pointer;">
+            <span class="label">Food Truck</span>
+            <p style="font-family:var(--font-display);font-size:1.6rem;letter-spacing:.08em;color:var(--cream);">LOCOS TRUCK</p>
+            <p style="font-size:.8rem;color:var(--cream-60);line-height:1.8;">タコスをのせて、<br>どこへでも行く。</p>
+          </a>
+          <div style="background:var(--surface-2);padding:40px 28px;display:flex;flex-direction:column;gap:12px;">
+            <span class="label">Events &amp; Music</span>
+            <p style="font-family:var(--font-display);font-size:1.6rem;letter-spacing:.08em;color:var(--cream);">DJ &amp; LIVE</p>
+            <p style="font-size:.8rem;color:var(--cream-60);line-height:1.8;">ライブ、DJ、タコス。<br>イベントが街を動かす。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CULTURE ── -->
+    <section id="culture" aria-label="カルチャーギャラリー">
+      <div class="container">
+        <div class="culture-header reveal">
+          <span class="label">Culture Gallery</span>
+          <div class="divider"></div>
+          <h2 class="section-title">The World of Heaven's + Locos</h2>
+        </div>
+
+        <div class="culture-mosaic" id="culture-mosaic">
+          <div class="parallax-wrap cm-1 reveal"><img class="parallax-img" loading="lazy" decoding="async" alt="HEAVEN'S+LOCOS"></div>
+          <div class="parallax-wrap cm-2 reveal reveal-delay-1"><img class="parallax-img" loading="lazy" decoding="async" alt="HEAVEN'S+LOCOS"></div>
+          <div class="parallax-wrap cm-3 reveal"><img class="parallax-img" loading="lazy" decoding="async" alt="HEAVEN'S+LOCOS"></div>
+          <div class="parallax-wrap cm-4 reveal reveal-delay-1"><img class="parallax-img" loading="lazy" decoding="async" alt="HEAVEN'S+LOCOS"></div>
+          <div class="parallax-wrap cm-5 reveal reveal-delay-2"><img class="parallax-img" loading="lazy" decoding="async" alt="HEAVEN'S+LOCOS"></div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lb-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:9999;flex-direction:column;align-items:center;justify-content:center;">
+          <button id="lb-close" style="position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1;">✕</button>
+          <button id="lb-prev" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:2.5rem;cursor:pointer;padding:8px;">&#8249;</button>
+          <button id="lb-next" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:2.5rem;cursor:pointer;padding:8px;">&#8250;</button>
+          <img id="lb-img" src="" alt="HEAVEN'S+LOCOS" style="max-width:90vw;max-height:85vh;object-fit:contain;">
+          <p id="lb-counter" style="color:rgba(255,255,255,.5);font-size:.8rem;margin-top:12px;letter-spacing:.1em;"></p>
+        </div>
+
+        <script>
+        (function(){
+          var photos = ["logos/CULTURE PHOTO/IMG_7820.jpeg","logos/CULTURE PHOTO/IMG_7461.jpeg","logos/CULTURE PHOTO/IMG_8919.JPG","logos/CULTURE PHOTO/IMG_9151.JPG","logos/CULTURE PHOTO/IMG_7119.jpeg","logos/CULTURE PHOTO/IMG_7660.jpeg","logos/CULTURE PHOTO/IMG_7230.jpeg","logos/CULTURE PHOTO/IMG_7699.jpeg","logos/CULTURE PHOTO/IMG_8096.jpeg","logos/CULTURE PHOTO/IMG_7617.jpeg","logos/CULTURE PHOTO/IMG_7284.jpeg","logos/CULTURE PHOTO/IMG_9218.JPG","logos/CULTURE PHOTO/IMG_7787.jpeg","logos/CULTURE PHOTO/IMG_7285.jpeg","logos/CULTURE PHOTO/IMG_9143.JPG","logos/CULTURE PHOTO/IMG_7246.jpeg","logos/CULTURE PHOTO/IMG_7483.jpeg","logos/CULTURE PHOTO/IMG_7620.jpeg","logos/CULTURE PHOTO/IMG_7266.jpeg","logos/CULTURE PHOTO/IMG_7909.jpeg","logos/CULTURE PHOTO/IMG_7579.jpeg","logos/CULTURE PHOTO/IMG_7257.jpeg","logos/CULTURE PHOTO/IMG_3214.jpeg","logos/CULTURE PHOTO/IMG_3202.jpeg","logos/CULTURE PHOTO/IMG_7216.jpeg","logos/CULTURE PHOTO/IMG_7580.jpeg","logos/CULTURE PHOTO/IMG_9132.JPG","logos/CULTURE PHOTO/IMG_9126.JPG","logos/CULTURE PHOTO/IMG_7001.jpeg","logos/CULTURE PHOTO/IMG_7406.jpeg","logos/CULTURE PHOTO/IMG_7826.jpeg","logos/CULTURE PHOTO/IMG_7060.jpeg","logos/CULTURE PHOTO/IMG_7133.jpeg","logos/CULTURE PHOTO/IMG_7236.jpeg","logos/CULTURE PHOTO/IMG_8830.JPG","logos/CULTURE PHOTO/IMG_7298.jpeg","logos/CULTURE PHOTO/IMG_7221.jpeg","logos/CULTURE PHOTO/IMG_3425.jpeg","logos/CULTURE PHOTO/IMG_7112.jpeg","logos/CULTURE PHOTO/IMG_7283.jpeg","logos/CULTURE PHOTO/IMG_9123.jpg","logos/CULTURE PHOTO/IMG_7978.jpeg","logos/CULTURE PHOTO/IMG_8771.JPG","logos/CULTURE PHOTO/IMG_7610.jpeg","logos/CULTURE PHOTO/IMG_7015.jpeg","logos/CULTURE PHOTO/IMG_7557.jpeg","logos/CULTURE PHOTO/IMG_7238.jpeg","logos/CULTURE PHOTO/IMG_7486.jpeg","logos/CULTURE PHOTO/IMG_3216.jpeg","logos/CULTURE PHOTO/IMG_7982.jpeg","logos/CULTURE PHOTO/IMG_7202.jpeg","logos/CULTURE PHOTO/IMG_6999.jpeg","logos/CULTURE PHOTO/IMG_7058.jpeg","logos/CULTURE PHOTO/IMG_7170.jpeg","logos/CULTURE PHOTO/IMG_7833.jpeg","logos/CULTURE PHOTO/IMG_9128.JPG","logos/CULTURE PHOTO/IMG_7798.jpeg","logos/CULTURE PHOTO/IMG_7018.jpeg","logos/CULTURE PHOTO/IMG_7307.jpeg","logos/CULTURE PHOTO/IMG_7350.jpeg","logos/CULTURE PHOTO/IMG_7995.jpeg","logos/CULTURE PHOTO/IMG_7669.jpeg","logos/CULTURE PHOTO/IMG_7297.jpeg","logos/CULTURE PHOTO/IMG_3299.JPG","logos/CULTURE PHOTO/IMG_6989.jpeg","logos/CULTURE PHOTO/IMG_7377.jpeg","logos/CULTURE PHOTO/IMG_9159.JPG","logos/CULTURE PHOTO/IMG_7009.jpeg","logos/CULTURE PHOTO/IMG_8104.jpeg","logos/CULTURE PHOTO/IMG_9164.JPG","logos/CULTURE PHOTO/IMG_9006.JPG","logos/CULTURE PHOTO/IMG_7290.jpeg","logos/CULTURE PHOTO/IMG_9013.JPG","logos/CULTURE PHOTO/IMG_7252.jpeg","logos/CULTURE PHOTO/IMG_7478.jpeg","logos/CULTURE PHOTO/IMG_7213.jpeg","logos/CULTURE PHOTO/IMG_3300.JPG","logos/CULTURE PHOTO/IMG_9200.JPG","logos/CULTURE PHOTO/IMG_7415.jpeg","logos/CULTURE PHOTO/IMG_7589.jpeg","logos/CULTURE PHOTO/IMG_7008.jpeg","logos/CULTURE PHOTO/IMG_7634.jpeg","logos/CULTURE PHOTO/IMG_9217.JPG","logos/CULTURE PHOTO/IMG_7225.jpeg"];
+          for(var i=photos.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=photos[i];photos[i]=photos[j];photos[j]=t;}
+          var imgs = document.querySelectorAll('#culture-mosaic .parallax-img');
+          for(var k=0;k<imgs.length;k++){ imgs[k].src = photos[k]; }
+
+          // Lightbox
+          var overlay = document.getElementById('lb-overlay');
+          var lbImg = document.getElementById('lb-img');
+          var lbCounter = document.getElementById('lb-counter');
+          var current = 0;
+
+          function showLb(idx){
+            current = (idx + photos.length) % photos.length;
+            lbImg.src = photos[current];
+            lbCounter.textContent = (current+1) + ' / ' + photos.length;
+            overlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+          }
+          function closeLb(){
+            overlay.style.display = 'none';
+            document.body.style.overflow = '';
+          }
+
+          document.querySelectorAll('#culture-mosaic .parallax-wrap').forEach(function(wrap, idx){
+            wrap.style.cursor = 'pointer';
+            wrap.addEventListener('click', function(){ showLb(idx); });
+          });
+
+          document.getElementById('lb-close').addEventListener('click', closeLb);
+          document.getElementById('lb-prev').addEventListener('click', function(){ showLb(current-1); });
+          document.getElementById('lb-next').addEventListener('click', function(){ showLb(current+1); });
+          overlay.addEventListener('click', function(e){ if(e.target===overlay) closeLb(); });
+          document.addEventListener('keydown', function(e){
+            if(overlay.style.display==='flex'){
+              if(e.key==='ArrowRight') showLb(current+1);
+              if(e.key==='ArrowLeft') showLb(current-1);
+              if(e.key==='Escape') closeLb();
+            }
+          });
+        })();
+        </script>
+
+        <!-- Instagram CTA -->
+        <div class="ig-cta reveal">
+          <p class="ig-cta-label">COME FOR THE CLOTHES. STAY FOR THE PEOPLE.</p>
+          <a href="https://www.instagram.com/heavenslocos_1f"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="ig-btn"
+             aria-label="Instagram @heavenslocos_1f をフォローする">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+            Follow @heavenslocos_1f
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VISIT ── -->
+    <section id="visit" aria-label="来店情報">
+      <div class="container">
+        <div class="visit-header reveal">
+          <span class="label">Come Visit Us</span>
+          <div class="divider"></div>
+          <h2 class="section-title">Access</h2>
+        </div>
+
+        <div class="visit-layout">
+          <div class="reveal">
+            <dl class="visit-dl">
+              <dt>Address</dt>
+              <dd>
+                〒963-8002<br>
+                福島県郡山市大町1-2-15<br>
+                カガミビル
+              </dd>
+              <dt>Floor</dt>
+              <dd>1F セレクトショップ<br>2F カジュアルバー</dd>
+              <dt>Hours</dt>
+              <dd>1F &nbsp; 12:00 &mdash; 20:00<br>2F &nbsp; 21:00 &mdash; 27:00</dd>
+              <dt>Instagram</dt>
+              <dd>
+                <a href="https://www.instagram.com/heavenslocos_1f"
+                   target="_blank" rel="noopener noreferrer"
+                   style="color:var(--cream-60);transition:color .3s;display:block"
+                   onmouseover="this.style.color='var(--cream)'"
+                   onmouseout="this.style.color='var(--cream-60)'">
+                  @heavenslocos_1f
+                </a>
+                <a href="https://www.instagram.com/heavenslocos_2f/"
+                   target="_blank" rel="noopener noreferrer"
+                   style="color:var(--cream-60);transition:color .3s;display:block"
+                   onmouseover="this.style.color='var(--cream)'"
+                   onmouseout="this.style.color='var(--cream-60)'">
+                  @heavenslocos_2f
+                </a>
+              </dd>
+            </dl>
+
+            <a href="https://maps.google.com/?q=福島県郡山市大町1-2-15"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="map-btn"
+               aria-label="Google マップで郡山市大町1-2-15を開く">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Google マップで開く
+            </a>
+          </div>
+
+          <div class="visit-map reveal reveal-delay-1">
+            <iframe
+              title="HEAVEN'S＋LOCOS 地図"
+              src="https://maps.google.com/maps?q=%E7%A6%8F%E5%B3%B6%E7%9C%8C%E9%83%A1%E5%B1%B1%E5%B8%82%E5%A4%A7%E7%94%BA1-2-15&output=embed"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <img src="logos/heavens_locos.png"
+           alt="HEAVEN'S＋LOCOS"
+           class="footer-logo"
+           width="180" height="60"
+           loading="lazy" decoding="async">
+      <nav class="footer-links" aria-label="フッターナビゲーション">
+        <a href="#shop">Shop</a>
+        <a href="#bar">Bar</a>
+        <a href="#culture">Culture</a>
+        <a href="https://www.instagram.com/heavenslocos_1f" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#visit">Access</a>
+      </nav>
+      <small>&copy; 2025 HEAVEN'S＋LOCOS. Uptown Koriyama, Fukushima.</small>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Nav: appear after hero ── */
+    const nav = document.getElementById('mainNav');
+    const heroH = document.getElementById('hero').offsetHeight;
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > heroH * 0.75);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    /* ── Hero parallax ── */
+    const heroBg = document.getElementById('heroBg');
+    const heroParallax = () => {
+      const y = window.scrollY;
+      if (y < heroH * 1.5) {
+        heroBg.style.transform = `translateY(${y * 0.38}px)`;
+      }
+    };
+    window.addEventListener('scroll', heroParallax, { passive: true });
+
+    /* ── Section parallax ── */
+    const parallaxImgs = document.querySelectorAll('.parallax-img');
+    const sectionParallax = () => {
+      const vy = window.innerHeight / 2;
+      parallaxImgs.forEach(img => {
+        if (img === heroBg.querySelector('img')) return;
+        const r = img.closest('.parallax-wrap').getBoundingClientRect();
+        if (r.bottom < 0 || r.top > window.innerHeight) return;
+        const center = r.top + r.height / 2;
+        const offset = (center - vy) * 0.13;
+        img.style.transform = `translateY(${offset}px)`;
+      });
+    };
+    window.addEventListener('scroll', sectionParallax, { passive: true });
+
+    /* ── Scroll reveal ── */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    /* ── Story scenes ── */
+    const storyIo = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.story-scene, .story-finale').forEach(el => storyIo.observe(el));
+
+    /* ── Instagram feed drag scroll ── */
+    const igWrap = document.getElementById('igScrollWrap');
+    if (igWrap) {
+      let isDown = false, startX, scrollLeft;
+
+      igWrap.addEventListener('mousedown', e => {
+        isDown = true;
+        igWrap.classList.add('is-dragging');
+        startX = e.pageX - igWrap.offsetLeft;
+        scrollLeft = igWrap.scrollLeft;
+      });
+      igWrap.addEventListener('mouseleave', () => { isDown = false; igWrap.classList.remove('is-dragging'); });
+      igWrap.addEventListener('mouseup', () => { isDown = false; igWrap.classList.remove('is-dragging'); });
+      igWrap.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - igWrap.offsetLeft;
+        igWrap.scrollLeft = scrollLeft - (x - startX) * 1.2;
+      });
+
+      /* prevent link click when dragging */
+      igWrap.addEventListener('click', e => {
+        if (igWrap.classList.contains('is-dragging')) e.preventDefault();
+      }, true);
+    }
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+
+</body>
+</html>
